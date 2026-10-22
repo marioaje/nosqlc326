@@ -16,8 +16,21 @@ app.get('/', (req, res) => {
     res.json({ mensaje: 'Saludos clase mi primera api' })
 });
 
+app.use('/usuarios', require('./routes/UsuarioRoutes'));
+
+mongoose.connect(process.env.MONGO_URI).then(() => {
+    console.log("bd nosql conectada");
+
+    app.listen(PORT, () => {
+        console.log(`Server API http://localhost:${PORT}`);
+    })
+})
+    .catch((error) => {
+        console.error("Error al conectar bd", error.message)
+    });
+
 
 app.listen(PORT, () => {
-    console.log('Server API http://localhost:${PORT}');
+
     console.log(`Server API http://localhost:${PORT}`);
 });
