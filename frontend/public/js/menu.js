@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <a class="nav-link" href="botones.html">Botones</a>
             <a class="nav-link" href="otroselementos.html">Otros Elementos</a>
             <a class="nav-link" href="tablas.html">Tablas</a>
+            <a class="nav-link" href="modal.html">Modales</a>
             
         </nav>
         `;
