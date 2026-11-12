@@ -13,5 +13,5 @@ app.use(express.static(
 
 app.listen(PORT, () => {
 
-    console.log(`Server API http://localhost:${PORT}`);
+    console.log(`Server Frontend http://localhost:${PORT}`);
 });
