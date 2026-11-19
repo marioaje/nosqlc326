@@ -55,7 +55,7 @@
       </footer>
     </div>
 
-    <!-- Modal -->
+    <!-- Modal Crear -->
     <div
       class="modal fade"
       id="modalCrear"
@@ -114,6 +114,191 @@
                   <button type="reset" class="btn btn-danger">Reset</button>
 
                   <button type="submit" class="btn btn-success">Salvar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Editar -->
+    <div
+      class="modal fade"
+      id="modalEditar"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalTitleId"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">Modal Editar Usuario</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form id="formUsuarioEditar">
+                <div class="mb-3">
+                  <div class="mb-3">
+                    <label for="" class="form-label">Id</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="ideditar"
+                      id="ideditar"
+                      aria-describedby="helpId"
+                      placeholder=""
+                    />
+                    <small id="helpId" class="form-text text-body-secondary"
+                      >Help text</small
+                    >
+                  </div>
+
+                  <label for="" class="form-label">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="nombreeditar"
+                    id="nombreeditar"
+                    aria-describedby="helpId"
+                    placeholder=""
+                    required
+                  />
+                  <small id="helpId" class="form-text text-body-secondary"
+                    >Help text Nombre</small
+                  >
+                </div>
+
+                <div class="mb-3">
+                  <label for="" class="form-label">Correo</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="correoeditar"
+                    id="correoeditar"
+                    aria-describedby="helpId"
+                    placeholder=""
+                    required
+                  />
+                  <small id="helpId" class="form-text text-body-secondary"
+                    >Help text correo</small
+                  >
+                </div>
+
+                <div class="mb-3">
+                  <button type="submit" class="btn btn-primary">
+                    Actualizar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Eliminar -->
+    <div
+      class="modal fade"
+      id="modalEliminar"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalTitleId"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">
+              Modal Eliminar Usuario
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form id="formUsuarioEliminar">
+                <div class="mb-3">
+                  <div class="mb-3">
+                    <label for="" class="form-label">Id</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="ideliminar"
+                      id="ideliminar"
+                      aria-describedby="helpId"
+                      placeholder=""
+                      disabled
+                    />
+                    <small id="helpId" class="form-text text-body-secondary"
+                      >Help text</small
+                    >
+                  </div>
+
+                  <label for="" class="form-label">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="nombreeliminar"
+                    id="nombreeliminar"
+                    aria-describedby="helpId"
+                    placeholder=""
+                    required
+                    disabled
+                  />
+                  <small id="helpId" class="form-text text-body-secondary"
+                    >Help text Nombre</small
+                  >
+                </div>
+
+                <div class="mb-3">
+                  <label for="" class="form-label">Correo</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="correoeliminar"
+                    id="correoeliminar"
+                    aria-describedby="helpId"
+                    placeholder=""
+                    required
+                    disabled
+                  />
+                  <small id="helpId" class="form-text text-body-secondary"
+                    >Help text correo</small
+                  >
+                </div>
+
+                <div class="mb-3">
+                  <button type="submit" class="btn btn-danger">Eliminar</button>
                 </div>
               </form>
             </div>
