@@ -14,6 +14,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/bootstrap-paleta-extendida.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -45,46 +46,7 @@
                 <th scope="col">Acciones</th>
               </tr>
             </thead>
-            <tbody>
-              <tr class="">
-                <td scope="row">R1C1</td>
-                <td>R1C2</td>
-                <td>R1C3</td>
-                <td>
-                  <a name="" id="" class="btn btn-danger" href="#" role="button"
-                    >Eliminar</a
-                  >
-
-                  <a
-                    name=""
-                    id=""
-                    class="btn btn-success"
-                    href="#"
-                    role="button"
-                    >Modificar</a
-                  >
-                </td>
-              </tr>
-              <tr class="">
-                <td scope="row">Item</td>
-                <td>Item</td>
-                <td>Item</td>
-                <td>
-                  <a name="" id="" class="btn btn-danger" href="#" role="button"
-                    >Eliminar</a
-                  >
-
-                  <a
-                    name=""
-                    id=""
-                    class="btn btn-success"
-                    href="#"
-                    role="button"
-                    >Modificar</a
-                  >
-                </td>
-              </tr>
-            </tbody>
+            <tbody id="nombreTabla"></tbody>
           </table>
         </div>
       </main>
@@ -177,5 +139,6 @@
     ></script>
 
     <script src="js/menu.js" defer></script>
+    <script type="module" src="js/usuarios.js"></script>
   </body>
 </html>
