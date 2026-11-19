@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <title>Mantenimiento de Usuarios</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS v5.3.8 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap-paleta-extendida.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <!-- place navbar here -->
+        <div id="mimenupersonal"></div>
+      </header>
+      <main>
+        <div class="table-responsive">
+          <h1>Mantemiento de Usuarios</h1>
+
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#modalId"
+          >
+            Crear Usuario
+          </button>
+
+          <table class="table table-light">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <td scope="row">R1C1</td>
+                <td>R1C2</td>
+                <td>R1C3</td>
+                <td>
+                  <a name="" id="" class="btn btn-danger" href="#" role="button"
+                    >Eliminar</a
+                  >
+
+                  <a
+                    name=""
+                    id=""
+                    class="btn btn-success"
+                    href="#"
+                    role="button"
+                    >Modificar</a
+                  >
+                </td>
+              </tr>
+              <tr class="">
+                <td scope="row">Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>
+                  <a name="" id="" class="btn btn-danger" href="#" role="button"
+                    >Eliminar</a
+                  >
+
+                  <a
+                    name=""
+                    id=""
+                    class="btn btn-success"
+                    href="#"
+                    role="button"
+                    >Modificar</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+      <footer>
+        <!-- place footer here -->
+      </footer>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalId"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalTitleId"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">Modal Crear Usuario</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form method="post">
+                <div class="mb-3">
+                  <label for="" class="form-label">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="nombre"
+                    id="nombre"
+                    aria-describedby="helpId"
+                    placeholder=""
+                    required
+                  />
+                  <small id="helpId" class="form-text text-body-secondary"
+                    >Help text Nombre</small
+                  >
+                </div>
+
+                <div class="mb-3">
+                  <label for="" class="form-label">Correo</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="correo"
+                    id="correo"
+                    aria-describedby="helpId"
+                    placeholder=""
+                    required
+                  />
+                  <small id="helpId" class="form-text text-body-secondary"
+                    >Help text correo</small
+                  >
+                </div>
+
+                <div class="mb-3">
+                  <button type="reset" class="btn btn-danger">Reset</button>
+
+                  <button type="submit" class="btn btn-success">Salvar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/menu.js" defer></script>
+  </body>
+</html>

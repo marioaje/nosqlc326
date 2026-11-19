@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     mimenupersonal.innerHTML =
         `
-        <nav class="nav justify-content-center">
+        <nav class="nav justify-content-center ">
             <a class="nav-link" href="index.html">Inicio</a>
             <a class="nav-link" href="encabezados.html">Encabezados</a>
             <a class="nav-link" href="elementos.html">Elementos</a>
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <a class="nav-link" href="otroselementos.html">Otros Elementos</a>
             <a class="nav-link" href="tablas.html">Tablas</a>
             <a class="nav-link" href="modal.html">Modales</a>
-            
+             <a class="nav-link" href="usuarios.html">Usuarios</a>
         </nav>
         `;
 
