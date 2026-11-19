@@ -5,6 +5,12 @@ import { API } from './confi.js';
 $(document).ready(function () {
     console.log(API.Usuarios)
     consultarDatos();
+
+    $("#formUsuarioCrear").submit(function (event) {
+        event.preventDefault();
+        crearUsuario();
+    });
+
 });
 
 
@@ -62,6 +68,38 @@ function muestreLosDatosEnTabla(response) {
 
     });
 
+}
+
+
+
+function crearUsuario() {
+    const nombre = $("#nombre").val();
+    const correo = $("#correo").val();
+
+    const objetoUsuario = {
+        nombre,
+        correo
+    };
+
+    console.log(objetoUsuario);
+
+
+    $.ajax({
+        type: "POST",
+        url: API.Usuarios,
+        data: JSON.stringify(objetoUsuario),
+        dataType: "json",
+        contentType: "application/json",
+        success: function (response) {
+            alert("Usuario creado");
+            consultarDatos();
+            $("#formUsuarioCrear")[0].reset();
+        },
+        error: function (xhr, status, error) {
+            let mensaje = xhr.status + ", " + xhr.responseJSON + " ," + xhr.statusText + " ," + xhr.responseText;
+            console.log(mensaje);
+        }
+    });
 
 }
 
